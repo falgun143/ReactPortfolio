@@ -160,7 +160,7 @@ img.socialIcon {
 
   .Content {
     flex-direction: column;
-    padding-top: 3rem;
+    padding: 3rem;
   }
 
   .container .box {
@@ -177,7 +177,7 @@ img.socialIcon {
   display: flex;
   flex-direction: row;
   gap: 0px;
-  padding-top: 5rem;
+  padding: 5rem;
 }
 
 @media (max-width: 1000px) {
