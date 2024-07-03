@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/github.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "Github Profile";
 
 /**
  * Project list
@@ -31,28 +31,27 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Course Selling Application 🎉",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Built a FullStack CourseSellingWebsite. Where all the CURD Operations can be performed on the Courses",
+    url: "https://github.com/falgun143/SoftwareProject",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Music Blocks Chat Bot",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "This is a Chatbot created using Opensource llm model (llama2) for the Musicblocks Organisation",
+    url: "https://github.com/falgun143/MusicBlocksChatBot",
   },
   {
-    title: "My Resume Site",
+    title: "React Projects",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Collection of All my Personal React Projects",
+    url: "https://github.com/falgun143/ReactProjects",
   },
   {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: "Open AI Chat Bot",
+    description: "Chatbot using the OpenAI models using langchain and Cassandradb for vectorstore",
+    url: "https://github.com/falgun143/ChatBotUsingCassandra",
   },
 ];
 
@@ -60,15 +59,15 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+      <div className="Content">
+        <div style={{ minWidth:"50%", alignSelf: "center" }}>
           <img
             src={image}
             style={{ height: "90%", width: "100%", objectFit: "cover" }}
             alt={imageAltText}
           />
         </div>
-        <div className="container">
+        <div className="container" >
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">

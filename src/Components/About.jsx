@@ -24,19 +24,25 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm a Final year IT student studying at IIIT Vadodara. I enjoy solving bugs and do open source Contributions.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+ "Java",
+ "Javascript",
+ "Python",
+ "Prisma, Sequelize",
+ "HTML, CSS",
+ "ReactJS, NodeJS, ExpressJS",
+ "MongoDB, MySql, Zod",
+ "ChakraUI, MaterialUI",
+ "Git",
+ "Github",
+ "Postman",
+ "Docker",
 ];
 
 /**
@@ -45,8 +51,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
-
+  "I am passionate to work on real world projects and solve issues and bugs by open source contributions. Leveraging my expertise in the MERN stack, I am dedicated to finding innovative solutions that enhance usability and ensure technology is accessible to everyone.";
 const About = () => {
   return (
     <section className="padding" id="about">
@@ -63,15 +68,7 @@ const About = () => {
         <h2>About Myself</h2>
         <p className="large">{description}</p>
         <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
+        <ul className="skills-list" >
           {skillsList.map((skill) => (
             <li key={skill}>{skill}</li>
           ))}
